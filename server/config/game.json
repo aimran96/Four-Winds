@@ -1,0 +1,11 @@
+{
+  "startingBalance": 1000,
+  "minBet": 1,
+  "maxBet": 500,
+  "houseEdge": 0.03,
+  "seasonMs": [4000, 9000],
+  "tickMs": 50,
+  "quickBets": [5, 10, 25, 50, 100],
+  "nudges": { "realityCheckEveryRounds": 10, "lossStreak": 3, "escalationFactor": 2 },
+  "sessionTtlMs": 3600000
+}

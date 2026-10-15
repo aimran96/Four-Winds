@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Four Winds</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body data-season="spring">
+  <header class="top">
+    <div class="brand">
+      <h1 data-i18n="title">Four Winds</h1>
+      <p data-i18n="tagline">A crash game where the world shows you the risk.</p>
+    </div>
+    <div class="tools">
+      <label class="sr-only" for="lang" data-i18n="ui.language">Language</label>
+      <select id="lang">
+        <option value="en">English</option>
+        <option value="fr">Français</option>
+      </select>
+      <button id="mute" type="button"></button>
+      <button id="motion" type="button" aria-pressed="false" data-i18n="ui.motion">Reduced motion</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="stage">
+      <canvas id="scene" role="img" aria-label="Four Winds"></canvas>
+      <div class="hud">
+        <div class="badge">
+          <span id="seasonName" class="season-name"></span>
+          <span class="risk">
+            <span data-i18n="risk">Risk</span>
+            <span id="riskPips" class="pips" aria-hidden="true"></span>
+            <span id="riskText"></span>
+          </span>
+        </div>
+        <div id="mult" class="mult" aria-hidden="true">1.00x</div>
+      </div>
+    </section>
+
+    <aside class="panel">
+      <div class="balance">
+        <span data-i18n="balance">Balance</span>
+        <strong><span id="balance">0.00</span> <small data-i18n="credits">credits</small></strong>
+      </div>
+
+      <label for="wager" data-i18n="wager">Wager</label>
+      <input id="wager" type="number" inputmode="decimal" step="0.01" min="1" value="10">
+      <div id="quick" class="quick"></div>
+
+      <label for="auto" data-i18n="autoCashOut">Auto cash out at (x)</label>
+      <input id="auto" type="number" inputmode="decimal" step="0.01" min="1.01" data-i18n-ph="autoPlaceholder" placeholder="off">
+
+      <div class="actions">
+        <button id="bet" type="button" class="primary" data-i18n="placeBet">Place Bet</button>
+        <button id="cash" type="button" class="cash" data-i18n="cashOut" disabled>Cash Out</button>
+      </div>
+
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+
+      <h2 data-i18n="history">Recent rounds</h2>
+      <ul id="history" class="history"></ul>
+
+      <details class="fair">
+        <summary data-i18n="verify.title">Provably fair</summary>
+        <p class="hint" data-i18n="verify.commit">Round commitment</p>
+        <code id="commit">-</code>
+        <button id="verify" type="button" data-i18n="verify.button">Verify round</button>
+        <p id="verifyOut" class="hint" role="status" aria-live="polite"></p>
+      </details>
+    </aside>
+  </main>
+
+  <dialog id="reality">
+    <form method="dialog">
+      <p id="realityText"></p>
+      <button id="realityOk" class="primary" data-i18n="nudge.continue">Keep playing</button>
+    </form>
+  </dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <footer>
+    <p data-i18n="ui.legend"></p>
+    <p data-i18n="disclaimer"></p>
+  </footer>
+  <script type="module" src="/main.js"></script>
+</body>
+</html>

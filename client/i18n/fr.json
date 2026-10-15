@@ -1,0 +1,65 @@
+{
+  "title": "Quatre Vents",
+  "tagline": "Un jeu de crash où le monde vous montre le risque.",
+  "balance": "Solde",
+  "credits": "crédits",
+  "wager": "Mise",
+  "autoCashOut": "Encaissement auto à (x)",
+  "autoPlaceholder": "désactivé",
+  "placeBet": "Miser",
+  "cashOut": "Encaisser",
+  "cashOutAt": "Encaisser · {amount}",
+  "risk": "Risque",
+  "riskLevels": ["Faible", "Modéré", "Élevé", "Extrême"],
+  "max": "Max",
+  "seasons": { "spring": "Printemps", "summer": "Été", "autumn": "Automne", "winter": "Hiver" },
+  "status": {
+    "idle": "Placez une mise pour envoyer l'oiseau vers le sud.",
+    "flying": "L'oiseau vole. Encaissez avant qu'il ne tombe !",
+    "cashed": "Encaissé à {mult}x. Vous avez gagné {amount}.",
+    "crashed": "L'oiseau est tombé à {mult}x ({cause}). Mise perdue.",
+    "landed": "Migration terminée ! L'oiseau a atteint {mult}x et vous avez gagné {amount}."
+  },
+  "causes": {
+    "lightning": "frappé par la foudre", "soaked": "ailes détrempées par la pluie", "kite": "collision avec un cerf-volant",
+    "hawk": "piqué d'un faucon", "heat": "épuisement dû à la chaleur", "drone": "collision avec un drone",
+    "gust": "renversé par une rafale", "leafstorm": "perdu dans une tempête de feuilles", "flock": "collision avec une volée",
+    "frost": "gelé en plein vol", "whiteout": "perdu dans le voile blanc", "icicle": "frappé par un glaçon"
+  },
+  "history": "Dernières manches",
+  "noHistory": "Aucune manche pour l'instant",
+  "verify": {
+    "button": "Vérifier la manche",
+    "title": "Équité vérifiable",
+    "commit": "Engagement de la manche (SHA-256 de la graine secrète)",
+    "hint": "Une fois la manche terminée, vérifiez qu'elle était équitable.",
+    "running": "Vérification…",
+    "ok": "Vérifié. La graine correspond à son engagement et le point de crash se recalcule à {mult}x.",
+    "fail": "Échec de la vérification.",
+    "noCrypto": "La vérification exige un contexte sécurisé (ouvrez le jeu sur http://localhost)."
+  },
+  "nudge": {
+    "realityCheck": "Rappel : vous avez joué {n} manches (bilan {net} crédits). Prenez un instant. Est-ce encore amusant ?",
+    "lossStreak": "Vous avez perdu {n} manches de suite. Une courte pause peut aider.",
+    "escalation": "Votre mise a fortement augmenté après une perte. Courir après ses pertes fonctionne rarement. Pensez à miser moins.",
+    "continue": "Continuer à jouer"
+  },
+  "ui": {
+    "language": "Langue",
+    "mute": "Son activé",
+    "unmute": "Son coupé",
+    "motion": "Animations réduites",
+    "legend": "Les oiseaux fantômes sont des encaissements simulés, pour l'ambiance seulement."
+  },
+  "err": {
+    "generic": "Une erreur est survenue. Veuillez réessayer.",
+    "insufficient_funds": "Crédits insuffisants pour cette mise.",
+    "round_in_progress": "Une manche est déjà en cours.",
+    "bad_amount": "Entrez une mise entre {min} et {max} crédits.",
+    "bad_auto": "L'encaissement auto doit être d'au moins 1,01x et ne pas dépasser le maximum de la saison.",
+    "no_session": "Session expirée. Rechargement…",
+    "no_round": "Cette manche n'existe plus.",
+    "busy": "Le serveur est occupé. Réessayez dans un instant."
+  },
+  "disclaimer": "Quatre Vents est un prototype de hackathon joué avec des crédits virtuels seulement. Aucun argent réel n'est en jeu."
+}
