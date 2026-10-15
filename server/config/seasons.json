@@ -1,0 +1,67 @@
+{
+  "spring": {
+    "maxMultiplier": 10,
+    "growthRate": 0.1,
+    "risk": 0.25,
+    "crashCauses": [
+      "lightning",
+      "soaked",
+      "kite"
+    ],
+    "decoyRate": 0.15,
+    "leadInMs": [
+      300,
+      600
+    ],
+    "bustChance": 0
+  },
+  "summer": {
+    "maxMultiplier": 50,
+    "growthRate": 0.13,
+    "risk": 0.5,
+    "crashCauses": [
+      "hawk",
+      "heat",
+      "drone"
+    ],
+    "decoyRate": 0.2,
+    "leadInMs": [
+      300,
+      600
+    ],
+    "bustChance": 0.1
+  },
+  "autumn": {
+    "maxMultiplier": 200,
+    "growthRate": 0.17,
+    "risk": 0.75,
+    "crashCauses": [
+      "gust",
+      "leafstorm",
+      "flock"
+    ],
+    "decoyRate": 0.28,
+    "leadInMs": [
+      300,
+      600
+    ],
+    "bustChance": 0.2
+  },
+  "winter": {
+    "maxMultiplier": 1000,
+    "growthRate": 0.22,
+    "risk": 1,
+    "crashCauses": [
+      "frost",
+      "whiteout",
+      "icicle",
+      "gust"
+    ],
+    "decoyRate": 0.35,
+    "leadInMs": [
+      300,
+      600
+    ],
+    "bustChance": 0.35
+  }
+}

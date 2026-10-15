@@ -1,0 +1,157 @@
+{
+  "title": "Four Winds",
+  "tagline": "A crash game where the world shows you the risk.",
+  "balance": "Balance",
+  "credits": "credits",
+  "wager": "Wager",
+  "autoCashOut": "Auto cash out at (x)",
+  "autoPlaceholder": "off",
+  "placeBet": "Place Bet",
+  "cashOut": "Cash Out",
+  "cashOutAt": "Cash Out · {amount}",
+  "risk": "Risk",
+  "riskLevels": [
+    "Low",
+    "Moderate",
+    "High",
+    "Extreme"
+  ],
+  "max": "Max",
+  "seasons": {
+    "spring": "Spring",
+    "summer": "Summer",
+    "autumn": "Autumn",
+    "winter": "Winter"
+  },
+  "status": {
+    "idle": "Place a bet to send the bird south.",
+    "flying": "The bird is flying. Cash out before it goes down!",
+    "cashed": "Cashed out at {mult}x. You won {amount}.",
+    "crashed": "The bird went down at {mult}x ({cause}). Wager lost.",
+    "landed": "Migration complete! The bird reached {mult}x and you won {amount}."
+  },
+  "causes": {
+    "lightning": "struck by lightning",
+    "soaked": "wings soaked by rain",
+    "kite": "collided with a kite",
+    "hawk": "hawk dive",
+    "heat": "heat exhaustion",
+    "drone": "hit a drone",
+    "gust": "knocked over by a gust",
+    "leafstorm": "lost in a leaf storm",
+    "flock": "flock collision",
+    "frost": "frozen mid-air",
+    "whiteout": "lost in a whiteout",
+    "icicle": "hit by an icicle"
+  },
+  "history": "Recent rounds",
+  "noHistory": "No rounds yet",
+  "verify": {
+    "button": "Verify round",
+    "title": "Provably fair",
+    "commit": "Round commitment (SHA-256 of the secret seed)",
+    "hint": "After a round ends, verify it was fair.",
+    "running": "Checking…",
+    "ok": "Verified. The seed matches its commitment and the crash point recomputes to {mult}x.",
+    "fail": "Verification failed.",
+    "noCrypto": "Verification needs a secure context (open the game at http://localhost)."
+  },
+  "nudge": {
+    "realityCheck": "Reality check: you have played {n} rounds (net {net} credits). Take a moment. Is this still fun?",
+    "lossStreak": "You have lost {n} rounds in a row. A short break can help.",
+    "escalation": "Your bet jumped sharply after a loss. Chasing losses rarely works. Consider a smaller bet.",
+    "continue": "Keep playing",
+    "coolOff": "Your play pattern looks risky, so betting is paused for {n} seconds. Take a breather."
+  },
+  "ui": {
+    "language": "Language",
+    "mute": "Sound on",
+    "unmute": "Sound off",
+    "motion": "Reduced motion",
+    "legend": "Ghost birds are simulated cash-outs, for atmosphere only."
+  },
+  "err": {
+    "generic": "Something went wrong. Please try again.",
+    "insufficient_funds": "Not enough credits for that wager.",
+    "round_in_progress": "A round is already in progress.",
+    "bad_amount": "Enter a wager between {min} and {max} credits.",
+    "bad_auto": "Auto cash out must be at least 1.01x and no higher than this season's maximum.",
+    "no_session": "Session expired. Reloading…",
+    "no_round": "That round no longer exists.",
+    "busy": "The server is busy. Please try again shortly.",
+    "limit_reached": "That wager is above what is left of your loss limit.",
+    "cooling_off": "Betting is paused for a short break.",
+    "limit_locked": "You can only lower your limit right now.",
+    "bad_limit": "Enter a limit between the minimum bet and your starting balance.",
+    "forbidden": "Not allowed.",
+    "bad_username": "Usernames are 3 to 24 characters: lowercase letters, digits or underscore.",
+    "bad_password": "Passwords need at least 8 characters.",
+    "username_taken": "That username is taken.",
+    "bad_credentials": "Wrong username or password.",
+    "account_locked": "Too many attempts. Try again in 15 minutes.",
+    "login_required": "Please sign in to play.",
+    "bad_location": "That location is not valid.",
+    "too_fast": "Location updates are too frequent."
+  },
+  "disclaimer": "Four Winds is a hackathon prototype played with virtual credits only. No real money is involved.",
+  "safe": {
+    "title": "Play safe",
+    "budget": "Loss budget: {used} of {limit} used ({left} left).",
+    "limit": "Loss limit (credits)",
+    "save": "Save limit",
+    "saved": "Loss limit saved.",
+    "level": {
+      "low": "Low",
+      "elevated": "Take care",
+      "high": "High risk"
+    },
+    "flag": {
+      "nearLimit": "close to your loss limit",
+      "halfLimit": "half your loss limit used",
+      "chasing": "raising bets after losses",
+      "fastPlay": "playing very fast",
+      "longSession": "long session",
+      "bigBets": "large wagers"
+    }
+  },
+  "acct": {
+    "title": "Account and location",
+    "guest": "Playing as a guest.",
+    "signedIn": "Signed in as {name}.",
+    "signIn": "Sign in",
+    "signOut": "Sign out",
+    "username": "Username",
+    "password": "Password (8+ characters)",
+    "register": "Create account",
+    "guestBtn": "Play as guest",
+    "locNote": "Optional. If you share your location we keep only an approximate position (about 1 km) to check that an account is not used from two places at once. You can stop at any time and it is erased."
+  },
+  "loc": {
+    "share": "Share my location",
+    "stop": "Stop sharing and erase",
+    "on": "Sharing an approximate location.",
+    "off": "Not sharing your location.",
+    "denied": "Location permission was denied.",
+    "unavailable": "Location is not available on this device."
+  },
+  "agent": {
+    "tab": "Sentinel live",
+    "title": "Sentinel agent",
+    "sub": "Watching this session in real time",
+    "meter": "Evidence of unfair wins (z-score). 3 = watch, 4 = review.",
+    "simulate": "Run cheater simulation",
+    "stop": "Stop simulation",
+    "empty": "Place a bet and watch the agent analyse the round.",
+    "collecting": "Collecting evidence: {n}/{need} test rounds",
+    "enough": "Enough rounds to judge",
+    "rounds": "Rounds analysed",
+    "wins": "Wins / expected",
+    "return": "Return per credit",
+    "level": {
+      "clear": "Clear",
+      "watch": "Watching",
+      "review": "Review"
+    },
+    "provisional": "* provisional until enough rounds have been tested"
+  }
+}

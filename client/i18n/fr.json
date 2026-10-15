@@ -1,0 +1,157 @@
+{
+  "title": "Quatre Vents",
+  "tagline": "Un jeu de crash où le monde vous montre le risque.",
+  "balance": "Solde",
+  "credits": "crédits",
+  "wager": "Mise",
+  "autoCashOut": "Encaissement auto à (x)",
+  "autoPlaceholder": "désactivé",
+  "placeBet": "Miser",
+  "cashOut": "Encaisser",
+  "cashOutAt": "Encaisser · {amount}",
+  "risk": "Risque",
+  "riskLevels": [
+    "Faible",
+    "Modéré",
+    "Élevé",
+    "Extrême"
+  ],
+  "max": "Max",
+  "seasons": {
+    "spring": "Printemps",
+    "summer": "Été",
+    "autumn": "Automne",
+    "winter": "Hiver"
+  },
+  "status": {
+    "idle": "Placez une mise pour envoyer l'oiseau vers le sud.",
+    "flying": "L'oiseau vole. Encaissez avant qu'il ne tombe !",
+    "cashed": "Encaissé à {mult}x. Vous avez gagné {amount}.",
+    "crashed": "L'oiseau est tombé à {mult}x ({cause}). Mise perdue.",
+    "landed": "Migration terminée ! L'oiseau a atteint {mult}x et vous avez gagné {amount}."
+  },
+  "causes": {
+    "lightning": "frappé par la foudre",
+    "soaked": "ailes détrempées par la pluie",
+    "kite": "collision avec un cerf-volant",
+    "hawk": "piqué d'un faucon",
+    "heat": "épuisement dû à la chaleur",
+    "drone": "collision avec un drone",
+    "gust": "renversé par une rafale",
+    "leafstorm": "perdu dans une tempête de feuilles",
+    "flock": "collision avec une volée",
+    "frost": "gelé en plein vol",
+    "whiteout": "perdu dans le voile blanc",
+    "icicle": "frappé par un glaçon"
+  },
+  "history": "Dernières manches",
+  "noHistory": "Aucune manche pour l'instant",
+  "verify": {
+    "button": "Vérifier la manche",
+    "title": "Équité vérifiable",
+    "commit": "Engagement de la manche (SHA-256 de la graine secrète)",
+    "hint": "Une fois la manche terminée, vérifiez qu'elle était équitable.",
+    "running": "Vérification…",
+    "ok": "Vérifié. La graine correspond à son engagement et le point de crash se recalcule à {mult}x.",
+    "fail": "Échec de la vérification.",
+    "noCrypto": "La vérification exige un contexte sécurisé (ouvrez le jeu sur http://localhost)."
+  },
+  "nudge": {
+    "realityCheck": "Rappel : vous avez joué {n} manches (bilan {net} crédits). Prenez un instant. Est-ce encore amusant ?",
+    "lossStreak": "Vous avez perdu {n} manches de suite. Une courte pause peut aider.",
+    "escalation": "Votre mise a fortement augmenté après une perte. Courir après ses pertes fonctionne rarement. Pensez à miser moins.",
+    "continue": "Continuer à jouer",
+    "coolOff": "Votre façon de jouer semble risquée : les mises sont suspendues {n} secondes. Faites une pause."
+  },
+  "ui": {
+    "language": "Langue",
+    "mute": "Son activé",
+    "unmute": "Son coupé",
+    "motion": "Animations réduites",
+    "legend": "Les oiseaux fantômes sont des encaissements simulés, pour l'ambiance seulement."
+  },
+  "err": {
+    "generic": "Une erreur est survenue. Veuillez réessayer.",
+    "insufficient_funds": "Crédits insuffisants pour cette mise.",
+    "round_in_progress": "Une manche est déjà en cours.",
+    "bad_amount": "Entrez une mise entre {min} et {max} crédits.",
+    "bad_auto": "L'encaissement auto doit être d'au moins 1,01x et ne pas dépasser le maximum de la saison.",
+    "no_session": "Session expirée. Rechargement…",
+    "no_round": "Cette manche n'existe plus.",
+    "busy": "Le serveur est occupé. Réessayez dans un instant.",
+    "limit_reached": "Cette mise dépasse ce qu'il reste de votre limite de pertes.",
+    "cooling_off": "Les mises sont suspendues pour une courte pause.",
+    "limit_locked": "Vous ne pouvez que baisser votre limite pour le moment.",
+    "bad_limit": "Entrez une limite entre la mise minimale et votre solde de départ.",
+    "forbidden": "Non autorisé.",
+    "bad_username": "3 à 24 caractères : minuscules, chiffres ou tiret bas.",
+    "bad_password": "Le mot de passe doit avoir au moins 8 caractères.",
+    "username_taken": "Ce nom est déjà pris.",
+    "bad_credentials": "Nom d'utilisateur ou mot de passe incorrect.",
+    "account_locked": "Trop de tentatives. Réessayez dans 15 minutes.",
+    "login_required": "Veuillez vous connecter pour jouer.",
+    "bad_location": "Cette position n'est pas valide.",
+    "too_fast": "Mises à jour de position trop fréquentes."
+  },
+  "disclaimer": "Quatre Vents est un prototype de hackathon joué avec des crédits virtuels seulement. Aucun argent réel n'est en jeu.",
+  "safe": {
+    "title": "Jouer prudemment",
+    "budget": "Budget de pertes : {used} sur {limit} utilisés ({left} restants).",
+    "limit": "Limite de pertes (crédits)",
+    "save": "Enregistrer",
+    "saved": "Limite enregistrée.",
+    "level": {
+      "low": "Faible",
+      "elevated": "Prudence",
+      "high": "Risque élevé"
+    },
+    "flag": {
+      "nearLimit": "proche de votre limite",
+      "halfLimit": "la moitié de votre limite utilisée",
+      "chasing": "mises augmentées après des pertes",
+      "fastPlay": "jeu très rapide",
+      "longSession": "longue session",
+      "bigBets": "grosses mises"
+    }
+  },
+  "acct": {
+    "title": "Compte et position",
+    "guest": "Vous jouez en invité.",
+    "signedIn": "Connecté : {name}.",
+    "signIn": "Se connecter",
+    "signOut": "Se déconnecter",
+    "username": "Nom d'utilisateur",
+    "password": "Mot de passe (8 caractères ou plus)",
+    "register": "Créer un compte",
+    "guestBtn": "Jouer en invité",
+    "locNote": "Facultatif. Si vous partagez votre position, nous ne gardons qu'une position approximative (environ 1 km) pour vérifier qu'un compte n'est pas utilisé à deux endroits à la fois. Vous pouvez arrêter à tout moment et elle est effacée."
+  },
+  "loc": {
+    "share": "Partager ma position",
+    "stop": "Arrêter et effacer",
+    "on": "Position approximative partagée.",
+    "off": "Position non partagée.",
+    "denied": "L'accès à la position a été refusé.",
+    "unavailable": "La position n'est pas disponible sur cet appareil."
+  },
+  "agent": {
+    "tab": "Sentinelle en direct",
+    "title": "Agent Sentinelle",
+    "sub": "Surveille cette session en temps réel",
+    "meter": "Preuve de gains anormaux (score z). 3 = surveillance, 4 = examen.",
+    "simulate": "Lancer une simulation de tricheur",
+    "stop": "Arrêter la simulation",
+    "empty": "Pariez et regardez l'agent analyser la manche.",
+    "collecting": "Collecte de preuves : {n}/{need} manches testées",
+    "enough": "Assez de manches pour juger",
+    "rounds": "Manches analysées",
+    "wins": "Gains / attendus",
+    "return": "Retour par crédit",
+    "level": {
+      "clear": "Normal",
+      "watch": "Surveillance",
+      "review": "Examen"
+    },
+    "provisional": "* provisoire tant que trop peu de manches sont testées"
+  }
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Four Winds - Monitor</title>
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    body { padding: 20px; }
+    table { border-collapse: collapse; width: 100%; font-size: 0.85rem; margin: 8px 0 24px; }
+    th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    .pill { padding: 1px 8px; border-radius: 999px; border: 1px solid var(--line); }
+    .review, .high { color: #ff8f8c; border-color: #7a2d2b; }
+    .watch, .elevated { color: var(--cash); border-color: var(--cash); }
+    .clear, .low { color: #7dffb0; border-color: #1f6b46; }
+    #msg { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <h1>Monitor</h1>
+  <p class="hint">Investigator view. Fraud signals are for review only: nothing here blocks a player. Needs the MONITOR_TOKEN, or open it on the server machine itself when none is set.</p>
+  <label for="token">Monitor token</label>
+  <input id="token" type="password" autocomplete="off" style="max-width:320px">
+  <p id="msg" role="status"></p>
+  <h2>Sessions (highest concern first)</h2>
+  <table id="sessions"></table>
+  <h2>Login activity (newest first)</h2>
+  <table id="logins"></table>
+  <h2>Alerts (newest first)</h2>
+  <table id="alerts"></table>
+  <script type="module" src="/monitor.js"></script>
+</body>
+</html>
